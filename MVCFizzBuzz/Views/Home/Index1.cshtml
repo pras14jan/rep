@@ -1,0 +1,16 @@
+﻿@model MVCFizzBuzz.Models.FizzBuzzModel
+
+@{
+    ViewBag.Title = "Index1";
+}
+
+<h2>Index1</h2>
+
+@foreach (var i in Model.FizzBuzzList)
+{
+    
+    <h5 class="@i">@i</h5>
+      
+  }
+
+    <link href="~/Content/color.css" rel="stylesheet" />
