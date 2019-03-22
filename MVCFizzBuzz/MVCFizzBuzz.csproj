@@ -146,14 +146,8 @@
     <Compile Include="FizzBuzzOC\FizzBuzz.cs" />
     <Compile Include="FizzBuzzOC\FizzBuzzCatagorizer.cs" />
     <Compile Include="FizzBuzzOC\FizzCatagorizer.cs" />
+    <Compile Include="FizzBuzzOC\IFactory.cs" />
     <Compile Include="FizzBuzzOC\PlainNumberCatagorizer.cs" />
-    <Compile Include="FizzBuzz\BuzzFactory.cs" />
-    <Compile Include="FizzBuzz\FizzBuzzFactory.cs" />
-    <Compile Include="FizzBuzz\FizzBuzzTest.cs" />
-    <Compile Include="FizzBuzz\FizzFactory.cs" />
-    <Compile Include="FizzBuzz\IBuzzFactory.cs" />
-    <Compile Include="FizzBuzz\IFizzBuzzFactory.cs" />
-    <Compile Include="FizzBuzz\IFizzFactory.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

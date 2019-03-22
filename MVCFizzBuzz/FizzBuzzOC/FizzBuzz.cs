@@ -5,33 +5,21 @@ using System.Web;
 
 namespace MVCFizzBuzz.FizzBuzzOC
 {
+    /// <summary>
+    /// FizzBuzz class is to call the chain, and ready to test.
+    /// </summary>
+
+
     public class FizzBuzz
     {
-        public string Calculate(int number)
-        {
-            return CatagorizerChain.Calculate(number);
-        }
-    }
-
-    public class ProcessCalculate
-    {
-        //public void Execute()
-        //{
-        //    var fb = new FizzBuzz();
-        //    for (int index = 1; index <= 100; index++)
-        //    {
-        //        Console.WriteLine(fb.Calculate(index));
-        //    }
-        //}
-        public List<string> Execute(int numb)
+        public List<string> Calculate(int number)
         {
             var verticalList = new List<string>();
-            var fb = new FizzBuzz();
-            for (int index = 1; index <= numb; index++)
-            {
-                verticalList.Add(fb.Calculate(index));
-            }
 
+            for (int index = 1; index <= number; index++)
+            {
+                verticalList.Add(CatagorizerChain.Calculate(number));
+            }
             return verticalList;
         }
     }
