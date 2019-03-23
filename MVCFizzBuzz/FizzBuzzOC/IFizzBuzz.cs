@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MVCFizzBuzz.FizzBuzz
+namespace MVCFizzBuzz.FizzBuzzOC
 {
-    interface IBuzzFactory
+    interface IFizzBuzz
     {
-        //string Buzz();
-        List<string> Buzz();
-
+        string IsSatisfiedBy(int number);
     }
 }

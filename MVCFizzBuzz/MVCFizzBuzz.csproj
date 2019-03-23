@@ -140,13 +140,13 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="FizzBuzzOC\AbstractFizzBuzz.cs" />
+    <Compile Include="FizzBuzzOC\AbstractFizzBuzzChain.cs" />
     <Compile Include="FizzBuzzOC\BuzzCatagorizer.cs" />
-    <Compile Include="FizzBuzzOC\Catagorizer.cs" />
-    <Compile Include="FizzBuzzOC\CatagorizerChain.cs" />
     <Compile Include="FizzBuzzOC\FizzBuzz.cs" />
     <Compile Include="FizzBuzzOC\FizzBuzzCatagorizer.cs" />
     <Compile Include="FizzBuzzOC\FizzCatagorizer.cs" />
-    <Compile Include="FizzBuzzOC\IFactory.cs" />
+    <Compile Include="FizzBuzzOC\IFizzBuzz.cs" />
     <Compile Include="FizzBuzzOC\PlainNumberCatagorizer.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -177,6 +177,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -190,8 +191,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Index1.cshtml" />
+    <Content Include="Views\Home\FizzBuzzView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

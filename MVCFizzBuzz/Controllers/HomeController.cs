@@ -10,31 +10,26 @@ namespace MVCFizzBuzz.Controllers
 {
     public class HomeController : Controller
     {
-        
-
-
+       
         public ActionResult Index()
         {
             return View();
         }
 
 
-        
-
 
         [HttpPost]
-        public ActionResult Index(FizzBuzzModel FBM)
+        public ActionResult Index(FizzBuzzModel fizzBuzzModel)
         {
+            FizzBuzzResult fizzBuzzResult = new FizzBuzzResult();
+
+            fizzBuzzModel.FizzBuzzList = fizzBuzzResult.ExecuteCalculate(fizzBuzzModel.Num);
             
 
-            FizzBuzz fizzBuzz = new FizzBuzz();
-
-            FBM.FizzBuzzList = fizzBuzz.Calculate(FBM.Num);
-            
-
-            return View("Index1", FBM);
+            return View("FizzBuzzView", fizzBuzzModel);
         }
 
 
+        
     }
 }
