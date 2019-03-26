@@ -151,6 +151,13 @@ publish/
 # in these scripts will be unencrypted
 PublishScripts/
 
+*.suo
+*.user
+_ReSharper.*
+bin
+obj
+packages
+
 # NuGet Packages
 *.nupkg
 # The packages folder can be ignored because of Package Restore
