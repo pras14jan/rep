@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using MVCFizzBuzz.Models;
-using MVCFizzBuzz.ClassLibraryFizzBuzz;
+using ServicesFizzBuzz.FizzBuzzBusinessLogic;
 
 namespace MVCFizzBuzz.Controllers
 {
